@@ -1,0 +1,73 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    transition: 1s all;
+
+    &__left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include respond(tab-port) {
+            transition: 0.5s all ease-in-out;
+            display: flex;
+            padding: 5rem 0;
+            text-align: center;
+            flex-direction: column;
+            background-color: $Dark-Violet;
+            border-radius: 2rem;
+            width: 86%;
+            position: absolute;
+            top: -100%;
+            box-shadow: 0.5rem 0.5rem 0.5rem rgba($color: #000000, $alpha: 0.5);
+        }
+    }
+
+    &__link {
+        transition: 0.5s all;
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 0 3rem;
+        color: $Grayish-Violet;
+        font-weight: 600;
+        &:hover {
+            color: $Dark-Violet;
+        }
+        @include respond(tab-port) {
+            margin-bottom: 3rem;
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__hamburger {
+        display: none;
+        @include respond(tab-port) {
+            display: block;
+            cursor: pointer;
+            font-size: 3rem;
+            transition: 0.5s all;
+        }
+
+        .line {
+            transition: 0.5s all;
+            height: 0.3rem;
+            width: 4rem;
+            position: relative;
+            z-index: 3;
+            display: block;
+            margin: 0.5rem;
+            background-color: $Dark-Violet;
+        }
+    }
+}
+.activee {
+    top: 12rem;
+}
