@@ -9,6 +9,19 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    @include respond(tab-land) {
+        font-size: 57%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 51%;
+    }
+    @include respond(phone) {
+        font-size: 46%;
+    }
+    @include respond(small-phone) {
+        font-size: 40%;
+    }
 }
 body {
     font-family: "Poppins", sans-serif;

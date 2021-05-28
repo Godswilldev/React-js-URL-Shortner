@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import st1 from "../images/icon-brand-recognition.svg";
 import st2 from "../images/icon-detailed-records.svg";
 import st3 from "../images/icon-fully-customizable.svg";
-import Buttons from "./Buttons";
 class Statistics extends Component {
   render() {
     return (

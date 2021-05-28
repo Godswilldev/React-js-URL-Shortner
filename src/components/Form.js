@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Buttons from "./Buttons";
 import uuid from "uuid/v4";
 import axios from "axios";
 
@@ -91,7 +90,9 @@ class Form extends Component {
               onChange={this.handleChange}
             />
             <p className="form__error"> {this.state.errorMsg} </p>
-            <Buttons type="square" text="Shorten it" size="3rem 6rem" />
+            <button className="btn btn__square" type="submit">
+              Shorten It
+            </button>
           </form>
         </div>
       </div>

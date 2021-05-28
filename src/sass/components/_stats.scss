@@ -1,8 +1,6 @@
 .statistics {
     margin: 0 7%;
-
     margin-top: 15rem;
-
     .hero__text--header {
         text-align: center;
         font-size: 5rem;
@@ -17,9 +15,12 @@
         align-items: center;
         flex-wrap: wrap;
         position: relative;
-
-        & .stat:nth-child(1) {
+        @include respond(tab-port) {
+            flex-direction: column;
         }
+
+        // & .stat:nth-child(1) {
+        // }
 
         & .stat:nth-child(2) {
             position: relative;
@@ -38,6 +39,11 @@
             height: 1.6rem;
             top: 70%;
             z-index: -1;
+            @include respond(tab-port) {
+                height: 90%;
+                width: 1.6rem;
+                top: 15%;
+            }
         }
     }
 }
@@ -51,6 +57,11 @@
         position: relative;
         top: 5rem;
         left: 2rem;
+        @include respond(tab-port) {
+            img {
+                width: 5rem;
+            }
+        }
     }
 
     &__text {
@@ -83,4 +94,8 @@
     margin: 0 auto;
     text-align: center;
     top: 105%;
+    @include respond(tab-port) {
+        height: 170vh;
+        top: 100%;
+    }
 }

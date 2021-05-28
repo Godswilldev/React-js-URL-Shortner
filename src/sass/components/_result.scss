@@ -6,20 +6,46 @@
     margin: 2rem 7%;
     border-radius: 1rem;
     padding: 2rem;
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 4rem;
+    }
 
     &__initialurl {
         font-size: 1.8rem;
         font-weight: 500;
+        @include respond(tab-port) {
+            border-bottom: 2px solid $Gray;
+            width: 100%;
+            margin: 1rem 0;
+            font-size: 2rem;
+            padding-bottom: 2rem;
+            width: fit-content;
+        }
     }
 
     &__result {
         display: flex;
         align-items: center;
+        @include respond(tab-port) {
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+        }
     }
 
     &__finalurl {
         color: $Cyan;
         margin-right: 2rem;
         font-size: 2.5rem;
+    }
+
+    .btn__square {
+        @include respond(tab-port) {
+            width: 100%;
+            margin: 2rem 0;
+            padding: 2rem 4rem;
+        }
     }
 }

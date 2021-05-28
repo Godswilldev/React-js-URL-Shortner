@@ -10,8 +10,8 @@ export default class Hero extends Component {
             More than just <br /> shorter links
           </h1>
           <p className="hero__text--paragraph">
-            Build your brand’s recognition and get detailed insights on how your
-            links are performing.
+            Build your brand’s recognition and get detailed <br /> insights on
+            how your links are performing.
           </p>
           <Buttons type="round" size="1.5rem 4rem" text="Get started" />
         </div>
