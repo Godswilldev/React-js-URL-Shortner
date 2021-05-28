@@ -95,8 +95,8 @@
     text-align: center;
     top: 105%;
     @include respond(tab-port) {
-        height: 70vh;
-        top: 60%;
+        height: 90vh;
+        top: 55%;
     }
 
  @include respond(phone) {
