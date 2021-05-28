@@ -5,7 +5,6 @@
     width: 100%;
     top: 0;
     left: 0;
-    transition: 1s all ease-in-out;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -16,14 +15,17 @@
     }
 }
 .lds-grid {
+    transition: 0.3s all;
+
     display: inline-block;
     position: relative;
     width: 80px;
     height: 80px;
     @include absCenter;
-    transition: 1s all ease;
 }
 .lds-grid div {
+    transition: 0.3s all;
+
     position: absolute;
     width: 16px;
     height: 16px;

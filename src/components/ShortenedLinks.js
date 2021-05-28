@@ -10,11 +10,7 @@ class ShortenedLinks extends Component {
     this.setState((curState) => ({
       links: [...curState.links, link],
     }));
-  //   copy = () => navigator.clipboard.writeText(this.state.finalUrl);
 
-  copy = (id) => {
-    this.state.links.find((l) => l.id === id);
-  };
   render() {
     return (
       <div>
@@ -24,7 +20,7 @@ class ShortenedLinks extends Component {
             key={link.id}
             initialUrl={link.initialUrl}
             finalUrl={link.finalUrl}
-            copy={() => this.copy}
+            // copy={() => this.copy}
           />
         ))}
       </div>

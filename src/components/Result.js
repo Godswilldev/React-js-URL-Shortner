@@ -1,17 +1,22 @@
 import React, { Component } from "react";
-import Buttons from "./Buttons";
 class Result extends Component {
+  state = {
+    copy: "Copy",
+  };
+  handleClick = () => {
+    setTimeout(() => this.setState({ copy: "Copied" }), 100);
+    navigator.clipboard.writeText(this.props.finalUrl);
+    setTimeout(() => this.setState({ copy: "Copy" }), 1000);
+  };
+
   render() {
     return (
       <div>
         <h1>{this.props.initialUrl}</h1>
         <h2>{this.props.finalUrl}</h2>
-        <Buttons
-          type="square"
-          size="1.5rem 4rem"
-          text="Copy"
-          onClick={this.props.copy}
-        />
+        <button className="btn btn__square" onClick={this.handleClick}>
+          {this.state.copy}
+        </button>
       </div>
     );
   }
