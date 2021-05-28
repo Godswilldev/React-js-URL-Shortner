@@ -9,7 +9,6 @@
         justify-content: center;
         align-items: center;
     }
-
     &__background {
         margin: 0 7%;
         display: flex;
@@ -43,7 +42,6 @@
             margin-bottom: 2rem;
         }
     }
-
     &__error {
         color: $Red;
         font-size: 1.8rem;
@@ -52,7 +50,6 @@
         @include respond(tab-port) {
         }
     }
-
     .btn__square {
         padding: 3rem 6rem;
         @include respond(tab-land) {

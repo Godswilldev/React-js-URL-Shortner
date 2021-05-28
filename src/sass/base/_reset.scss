@@ -5,14 +5,12 @@
     padding: 0;
     box-sizing: inherit;
 }
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;
     @include respond(tab-land) {
         font-size: 57%;
     }
-
     @include respond(tab-port) {
         font-size: 51%;
     }
