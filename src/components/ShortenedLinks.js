@@ -3,13 +3,17 @@ import Result from "./Result";
 import Form from "./Form";
 class ShortenedLinks extends Component {
   state = {
-    links: [],
+    links: JSON.parse(window.localStorage.getItem("links") || "[]"),
   };
 
   createLinks = (link) =>
-    this.setState((curState) => ({
-      links: [...curState.links, link],
-    }));
+    this.setState(
+      (curState) => ({
+        links: [...curState.links, link],
+      }),
+      () =>
+        window.localStorage.setItem("links", JSON.stringify(this.state.links))
+    );
 
   render() {
     return (
@@ -20,7 +24,6 @@ class ShortenedLinks extends Component {
             key={link.id}
             initialUrl={link.initialUrl}
             finalUrl={link.finalUrl}
-            // copy={() => this.copy}
           />
         ))}
       </div>
