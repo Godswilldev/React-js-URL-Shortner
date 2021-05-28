@@ -1,0 +1,12 @@
+.boost {
+    margin-top: 30rem;
+    padding: 5rem 0;
+    color: #fff;
+    text-align: center;
+    background-color: $Dark-Violet;
+    background-image: url(../../images/bg-boost-desktop.svg);
+    &__text {
+        margin-bottom: 4rem;
+        font-size: 3rem;
+    }
+}

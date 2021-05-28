@@ -6,7 +6,9 @@ export default class Hero extends Component {
     return (
       <div className="hero">
         <div className="hero__text">
-          <h1 className="hero__text--header">More than just shorter links</h1>
+          <h1 className="hero__text--header">
+            More than just <br /> shorter links
+          </h1>
           <p className="hero__text--paragraph">
             Build your brand’s recognition and get detailed insights on how your
             links are performing.

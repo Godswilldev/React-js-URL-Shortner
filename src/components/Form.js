@@ -76,22 +76,24 @@ class Form extends Component {
         </div>
       </div>
     ) : (
-      <div className="form__background">
-        <form onSubmit={this.handleSubmit} className="form">
-          <input
-            className={
-              this.state.errorMsg === "" ? "form__input" : "error form__input"
-            }
-            type="text"
-            name="url"
-            id="url"
-            placeholder="Shorten an Link Here..."
-            value={this.state.url}
-            onChange={this.handleChange}
-          />
-          <p className="form__error"> {this.state.errorMsg} </p>
-          <Buttons type="square" text="Shorten it" size="3rem 6rem" />
-        </form>
+      <div className="geg">
+        <div className="form__background">
+          <form onSubmit={this.handleSubmit} className="form">
+            <input
+              className={
+                this.state.errorMsg === "" ? "form__input" : "error form__input"
+              }
+              type="text"
+              name="url"
+              id="url"
+              placeholder="Shorten an Link Here..."
+              value={this.state.url}
+              onChange={this.handleChange}
+            />
+            <p className="form__error"> {this.state.errorMsg} </p>
+            <Buttons type="square" text="Shorten it" size="3rem 6rem" />
+          </form>
+        </div>
       </div>
     );
   }
