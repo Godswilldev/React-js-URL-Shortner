@@ -1,0 +1,25 @@
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $Grayish-Violet;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    &__initialurl {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    &__result {
+        display: flex;
+        align-items: center;
+    }
+
+    &__finalurl {
+        color: $Cyan;
+        margin-right: 2rem;
+        font-size: 2.5rem;
+    }
+}
