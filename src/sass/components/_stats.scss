@@ -95,7 +95,7 @@
     text-align: center;
     top: 105%;
     @include respond(tab-port) {
-        height: 170vh;
+        height: 100vh;
         top: 100%;
     }
 }
